@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/haseebnqureshi/accelerated.api.module#readme",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "underscore": "^1.8.3"
   }
 }

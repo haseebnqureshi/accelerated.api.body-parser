@@ -1,4 +1,24 @@
 
+## Usage
+This is just out-of-the-box, standard-issue middleware for your ```accelerated.api``` project.
+
+Once you include ```accelerated.api.bodyParser``` into your project dependencies and ```npm install``` your project (thereby installing this module), you'll want to include the module like this:
+
+```
+
+var api = require('accelerated.api');
+
+var apiBodyParser = require('acceleratd.api.bodyParser');
+
+api.useMiddlewares([ 
+	[apiBodyParser.key, apiBodyParser.middleware]
+]);
+
+api.run();
+
+```
+
+
 ## Quick Start
 This repo is an easy-to-use npm template to create modules for accelerated.api. Simply clone this repo and:
 
