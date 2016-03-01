@@ -1,5 +1,5 @@
 {
-  "name": "accelerated.api.bodyParser",
+  "name": "accelerated.api.body-parser",
   "version": "1.0.0",
   "description": "Standard issue body-parser for example and convenience.",
   "main": "index.js",
@@ -9,13 +9,13 @@
   "author": "Haseeb Qureshi <haseeb.n.qureshi@gmail.com> (http://twitter.com/_hq)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haseebnqureshi/accelerated.api.bodyParser.git"
+    "url": "git+https://github.com/haseebnqureshi/accelerated.api.body-parser.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/haseebnqureshi/accelerated.api.bodyParser/issues"
+    "url": "https://github.com/haseebnqureshi/accelerated.api.body-parser/issues"
   },
-  "homepage": "https://github.com/haseebnqureshi/accelerated.api.bodyParser#readme",
+  "homepage": "https://github.com/haseebnqureshi/accelerated.api.body-parser#readme",
   "dependencies": {
     "body-parser": "^1.15.0"
   }
