@@ -1,24 +1,33 @@
 module.exports = (function() {
 
-	var moduleKey = 'bodyParser';
-	var moduleName = 'Body Parser';
+    // you can require this or other modules using accelerated.api.module 
+    var module = require('accelerated.api.module');
 
-	/* Careful - don't modify below unless you're sure! */
+	var bodyParser = require('body-parser');
 
-	var Module = {
+    // set your module's key for reference by middlwares, models, and routes 
+    module.setKey('bodyParser');
 
-		key: moduleKey,
+    // set your module's name for logging output 
+    module.setName('Body Parser Module');
 
-		name: moduleName,
+    // you can choose to extend your module's middleware 
+    module.appendMiddleware(function(express, app, models) {
 
-		middleware: require('./middleware'),
+		app.use(bodyParser.urlencoded({ extended: false }));
 
-		model: require('./model'),
+		app.use(bodyParser.json({ type: 'application/json' }));
 
-		route: require('./route')
-	
-	};
+		app.use(function(req, res, next) {
+			res.header('Access-Control-Allow-Origin', '*');
+			next();
+		});
 
-	return Module;
+        // modify app to include user authentication middleware 
+        return app;
+
+    });
+
+    return module;
 
 })();
