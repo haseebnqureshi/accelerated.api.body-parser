@@ -8,7 +8,7 @@ Once you include ```accelerated.api.bodyParser``` into your project dependencies
 
 var api = require('accelerated.api');
 
-var apiBodyParser = new require('acceleratd.api.body-parser')();
+var apiBodyParser = require('acceleratd.api.body-parser').use();
 
 api.useMiddlewares([ 
 	[apiBodyParser.key, apiBodyParser.middleware]
