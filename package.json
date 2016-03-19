@@ -1,6 +1,6 @@
 {
   "name": "accelerated.api.body-parser",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Standard issue body-parser for example and convenience.",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/haseebnqureshi/accelerated.api.body-parser#readme",
   "dependencies": {
-    "accelerated.api.module": "^1.2.1",
+    "accelerated.api.module": "^1.2.2",
     "body-parser": "^1.15.0"
   }
 }

@@ -12,7 +12,7 @@ module.exports = (function() {
         name: 'Body Parser Module',
 
         //you can choose to extend your module's middleware 
-        appendMiddleware: function(express, app, models) {
+        appendMiddleware: function(express, app, models, settings) {
 
             app.use(bodyParser.urlencoded({ extended: false }));
 
